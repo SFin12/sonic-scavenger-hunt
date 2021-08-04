@@ -1,0 +1,17 @@
+.input {
+  margin: 20px auto;
+  height: 40px;
+  width: auto;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(255, 252, 239);
+  border-radius: 10px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
