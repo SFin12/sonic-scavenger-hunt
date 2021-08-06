@@ -1,0 +1,18 @@
+.sonic {
+  position: relative;
+  width: fit-content;
+  max-width: 300px;
+  animation: mymove linear 1s 200 reverse;
+  animation-delay: 4s;
+  animation-play-state: running;
+  margin-top: 10px;
+}
+
+@keyframes mymove {
+  0% {
+    left: 90%;
+  }
+  100% {
+    left: 80%;
+  }
+}

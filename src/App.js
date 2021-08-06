@@ -4,7 +4,7 @@ import "./App.css";
 import IntroPage from "./Components/introPage";
 import MainPage from "./Components/mainPage";
 import StartingPage from "./Components/startingPage";
-import Timer from "./Components/timer";
+import Timer from "./Components/Animations/timer";
 
 class App extends React.Component {
   constructor(props) {

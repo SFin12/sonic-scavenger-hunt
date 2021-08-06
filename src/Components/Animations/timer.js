@@ -1,6 +1,6 @@
 import React from "react";
-import spaceship from "../Images/drEggmanShip.png";
-import earth from "../Images/earth.png";
+import spaceship from "../../Images/drEggmanShip.png";
+import earth from "../../Images/earth.png";
 import "./timer.css";
 import Countdown from "react-countdown";
 
@@ -10,7 +10,7 @@ class Timer extends React.Component {
     let ship;
     let countdown;
     if (this.props.isActive) {
-      space = "space";
+      space = "stars";
       ship = "ship";
       countdown = "countdown";
     } else {
@@ -42,9 +42,11 @@ class Timer extends React.Component {
     };
     return (
       <div className={space}>
-        <Countdown date={Date.now() + 360000} renderer={renderer} />
-        <img className="earth" src={earth} alt="earth" />
-        <img className={ship} src={spaceship} alt="Dr. Eggman" />;
+        <div className="twinkling">
+          <Countdown date={Date.now() + 360000} renderer={renderer} />
+          <img className="earth" src={earth} alt="earth" />
+          <img className={ship} src={spaceship} alt="Dr. Eggman" />
+        </div>
       </div>
     );
   }

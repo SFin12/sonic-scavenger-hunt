@@ -1,6 +1,8 @@
 import React from "react";
 import "./mainPage.css";
-import Animations from "./animations";
+import Sonic from "./Animations/sonic";
+import Amy from "./Animations/amy";
+import Shadow from "./Animations/shadow";
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -13,15 +15,15 @@ class MainPage extends React.Component {
         "Hmm that doesn't seem right, are you sure you have Sonic's shoes? Maybe you typed it in wrong.",
       ],
       [
-        "Now we need to find out what the 767 means. Ask an adult and let me know what they say. Hurry, I'm going to be sick watching Sonic run in circles!",
+        "Now we need to find out what the 767 means. HEY! STOP WATCHING SONIC AND PAY ATTENTION! Ask an adult and let me know what they say. Hurry, I'm going to be sick watching Sonic run in circles!",
         "sound",
         "That's right, we need Sonic to run the speed of sound to get across the country to Dr. Eggman's lab...",
         "Hmm that doesn't seem right, ask another adult or try typing it in again. SONIC PLEASE STOP!",
       ],
       [
         "Now the trick is to find the keys to Dr. Eggman's lab. I know of an unhappy former employee of \
-        Dr. Eggman. His name is Dr. Paul Finegan, he might know where the keys are. Amy Rose, you're sweet, \
-        you should talk to him. Come back when you find them and tell me how many you have.",
+        Dr. Eggman. His name is Dr. Paul Finegan, he might know where the keys are. Amy Rose, I think \
+        you should go talk to him. Come back when you find them and tell me how many you have.",
         "3",
         "Awesome, those are his keys!",
         "Hmm I don't think those are his keys, keep looking.",
@@ -33,7 +35,7 @@ class MainPage extends React.Component {
         "I think you have the wrong computer, look around some more.",
       ],
       [
-        "Ok Shadow we are going to need your skills. To create the Sonic Boom we are going to \
+        "Shadow, we are going to need your skills. To create the Sonic Boom we are going to \
         need a giant megaphone to create the sound wave. Go to the Army Depot to find one. Let \
         me know what color you get when you come back. I'm very particular about what color \
         parts I use.",
@@ -55,6 +57,34 @@ class MainPage extends React.Component {
         "yes",
         "Great!",
         "It's a simple question, yes or no. Why are you still here then?",
+      ],
+      [
+        "Let's get this Sonic Boom built. Let's double check the part number first.",
+        "7V8",
+        "Yup, that's the one.",
+        "Uhhhh, I said Corvette not a scooter. Try typing that again.",
+      ],
+      [
+        "Hey Bunny, I got something in my eye and need your help to identify the correct parts.\
+        Is this the computer?",
+        "yes",
+        "Ok good.",
+        "Are you sure?",
+      ],
+      [
+        "Are these the keys?",
+        "no",
+        "Whoops, that wasn't supposed to happen. I better put those in the hamper.",
+        "Huh, why do they have such a funny smell?",
+      ],
+      [
+        "Finally, I got the dirt out of my eye. It's time to get the satellite online. Blaze \
+        you're a tech genious, go find Director Lucketta for the location of the satellite. Once \
+        you find it, enter the coordinates you find on the back.",
+        "95655",
+        "Alright, the satellite is online! Well this is strange, we are getting a message... it \
+        looks like it is coming from.... Dr. Eggman!",
+        "I tried inputting those coordinates but it didn't work. Check again.",
       ],
       [
         "Let's get this Sonic Boom built. Let's double check the part number first.",
@@ -84,8 +114,9 @@ class MainPage extends React.Component {
 
   handleClick() {
     if (
+      this.state.inputValue[0] &&
       this.state.inputValue[0].toLowerCase() ===
-      window.qNa[window.currentArr][window.answer][0].toLowerCase()
+        window.qNa[window.currentArr][window.answer][0].toLowerCase()
     ) {
       this.setState({
         inputValue: "",
@@ -102,8 +133,8 @@ class MainPage extends React.Component {
           text: window.qNa[window.currentArr][window.question],
           inputClass: "visible",
         });
-      }, responseLength * 225);
-    } else {
+      }, responseLength * 215);
+    } else if (this.state.inputValue[0]) {
       const wrongAnswerLength =
         window.qNa[window.currentArr][window.wrongAnswer].length;
       this.setState({
@@ -118,14 +149,42 @@ class MainPage extends React.Component {
           inputClass: "visible",
         });
       }, wrongAnswerLength * 170);
+    } else {
+      this.setState({
+        inputValue: "",
+        text: "So... were you going to tell me something? .......AKWARD....",
+        inputClass: "hidden",
+      });
+
+      setTimeout(() => {
+        this.setState({
+          text: window.qNa[window.currentArr][window.question],
+          inputClass: "visible",
+        });
+      }, 6000);
     }
   }
 
   render() {
+    let characterAnimation;
+    switch (this.state.text) {
+      case window.qNa[1][window.response]:
+        characterAnimation = <Sonic />;
+        break;
+      case window.qNa[2][window.question]:
+        characterAnimation = <Amy />;
+        break;
+      case window.qNa[4][window.question]:
+        characterAnimation = <Shadow />;
+        break;
+      default:
+        characterAnimation = null;
+        break;
+    }
     return (
       <div>
         <p>{this.state.text}</p>
-        <Animations isActive={window.currentArr === 1 ? true : false} />
+        {characterAnimation}
         <div className={this.state.inputClass}>
           <input
             className="input"
