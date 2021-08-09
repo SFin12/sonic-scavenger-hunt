@@ -118,7 +118,7 @@ class MainPage extends React.Component {
     window.eggmanText =
       "I'm coming for you Sonic! You and all your little friends! With my robots I will rule the \
       WORLD!... \nWait a second, are guys celebrating a birthday party?\n...psst you have to press Enter";
-    window.currentArr = 0;
+    window.currentArr = 11;
     window.question = 0;
     window.answer = 1;
     window.response = 2;

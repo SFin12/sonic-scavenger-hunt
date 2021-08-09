@@ -8,24 +8,34 @@ import SoundWave from "./soundWave";
 class Timer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      tempClass: "",
+    };
   }
   render() {
     let space;
     let ship;
+    let reverse;
     let countdown;
     if (this.props.isActive) {
       space = "stars";
       ship = "ship";
+      reverse = "shipContainer";
       countdown = "countdown";
     } else {
       space = "space hide";
       ship = "ship paused";
+      reverse = "shipContainer";
       countdown = "countdown stopped";
     }
     if (this.props.reverse) {
-      ship = "ship reverse";
+      ship = "ship paused";
+      reverse = "shipContainer reverse";
       countdown = "countdown stopped";
+      setTimeout(() => {
+        ship = this.state.tempClass;
+        this.setState({ tempClass: "hide" });
+      }, 12000);
     }
 
     // Random component
@@ -60,8 +70,9 @@ class Timer extends React.Component {
             />
           </div>
           <img className="earth" src={earth} alt="earth" />
-
-          <img className={ship} src={spaceship} alt="Dr. Eggman" />
+          <div className={reverse}>
+            <img className={ship} src={spaceship} alt="Dr. Eggman" />
+          </div>
         </div>
       </div>
     );

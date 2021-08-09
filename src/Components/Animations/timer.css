@@ -4,8 +4,7 @@
   align-items: center;
   z-index: 5;
   right: 550px;
-  bottom: 45px;
-  margin: 5px;
+  bottom: 5px;
 }
 
 .space {
@@ -19,15 +18,15 @@
   height: 155px;
 }
 
-.hide {
-  display: none;
-}
-
 .countdown {
-  display: flex;
+  width: fit-content;
+  margin: auto;
+  z-index: 4;
+  position: absolute;
+  right: 50%;
   color: yellow;
   font-size: 30px;
-  justify-content: center;
+  bottom: 55px;
 }
 
 .stopped {
@@ -38,36 +37,42 @@
 
 .ship {
   position: relative;
-  bottom: 75px;
+  bottom: 50px;
   z-index: 5;
-  animation: mymove 60s linear 1 forwards;
+  animation: mymove 20s linear 1 normal forwards;
   animation-play-state: running;
+  margin-top: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.shipContainer {
+  position: relative;
+  bottom: 80px;
+  z-index: 5;
+  animation: mymove 17s linear 1 reverse both;
+  animation-play-state: paused;
   margin-top: 10px;
 }
 
 .paused {
   animation-play-state: paused;
+  opacity: 0;
+  transition: 25s opacity;
 }
 
 .reverse {
-  animation: mymove 30s linear 1 reverse forwards;
-}
-
-@keyframes reverseMove {
-  from {
-    right: -600px;
-  }
-  to {
-    right: 800px;
-  }
+  animation-play-state: running;
 }
 
 @keyframes mymove {
-  from {
-    right: -600px;
+  0% {
+    left: 800px;
   }
-  to {
-    right: 600px;
+  100% {
+    left: -210px;
   }
 }
 
