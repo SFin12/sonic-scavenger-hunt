@@ -3,8 +3,13 @@ import spaceship from "../../Images/drEggmanShip.png";
 import earth from "../../Images/earth.png";
 import "./timer.css";
 import Countdown from "react-countdown";
+import SoundWave from "./soundWave";
 
 class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     let space;
     let ship;
@@ -16,6 +21,10 @@ class Timer extends React.Component {
     } else {
       space = "space hide";
       ship = "ship paused";
+      countdown = "countdown stopped";
+    }
+    if (this.props.reverse) {
+      ship = "ship reverse";
       countdown = "countdown stopped";
     }
 
@@ -43,8 +52,15 @@ class Timer extends React.Component {
     return (
       <div className={space}>
         <div className="twinkling">
-          <Countdown date={Date.now() + 360000} renderer={renderer} />
+          <div className={countdown}>
+            <Countdown
+              className={countdown}
+              date={Date.now() + 2700000}
+              renderer={renderer}
+            />
+          </div>
           <img className="earth" src={earth} alt="earth" />
+
           <img className={ship} src={spaceship} alt="Dr. Eggman" />
         </div>
       </div>

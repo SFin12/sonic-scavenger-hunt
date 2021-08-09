@@ -2,6 +2,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
+  z-index: 5;
   right: 550px;
   bottom: 45px;
   margin: 5px;
@@ -29,16 +30,36 @@
   justify-content: center;
 }
 
+.stopped {
+  display: none;
+  z-index: -1;
+  opacity: 0;
+}
+
 .ship {
   position: relative;
   bottom: 75px;
-  animation: mymove 360s linear 1 forwards;
+  z-index: 5;
+  animation: mymove 60s linear 1 forwards;
   animation-play-state: running;
   margin-top: 10px;
 }
 
 .paused {
   animation-play-state: paused;
+}
+
+.reverse {
+  animation: mymove 30s linear 1 reverse forwards;
+}
+
+@keyframes reverseMove {
+  from {
+    right: -600px;
+  }
+  to {
+    right: 800px;
+  }
 }
 
 @keyframes mymove {

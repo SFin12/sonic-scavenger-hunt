@@ -5,6 +5,7 @@ import IntroPage from "./Components/introPage";
 import MainPage from "./Components/mainPage";
 import StartingPage from "./Components/startingPage";
 import Timer from "./Components/Animations/timer";
+import EndPage from "./Components/endPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,9 +16,11 @@ class App extends React.Component {
       mainPage: false,
       endPage: false,
       timer: false,
+      reverse: false,
     };
 
     this.openPage = this.openPage.bind(this);
+    this.reverse = this.reverse.bind(this);
   }
 
   openPage(page) {
@@ -28,6 +31,10 @@ class App extends React.Component {
       [page]: true,
       timer: true,
     });
+  }
+
+  reverse() {
+    this.setState({ reverse: true });
   }
 
   render() {
@@ -41,10 +48,11 @@ class App extends React.Component {
             <StartingPage openPage={this.openPage} />
           ) : null}
           {this.state.introPage ? <IntroPage openPage={this.openPage} /> : null}
-          {this.state.mainPage ? <MainPage /> : null}
+          {this.state.mainPage ? <MainPage openPage={this.openPage} /> : null}
+          {this.state.endPage ? <EndPage reverse={this.reverse} /> : null}
         </div>
         <div>
-          <Timer isActive={this.state.timer} />
+          <Timer isActive={this.state.timer} reverse={this.state.reverse} />
         </div>
       </div>
     );

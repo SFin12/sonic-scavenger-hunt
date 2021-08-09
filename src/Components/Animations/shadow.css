@@ -3,4 +3,22 @@
   width: fit-content;
   max-width: 300px;
   margin-top: 10px;
+  -webkit-animation: fadeinout 6s linear forwards;
+  animation: fadeinout 6s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+
+  30%,
+  70% {
+    opacity: 10%;
+    filter: grayscale(100%);
+    transition: opacity 3s;
+  }
 }

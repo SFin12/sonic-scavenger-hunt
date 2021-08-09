@@ -1,0 +1,12 @@
+.showing {
+  display: relative;
+  position: relative;
+  width: fit-content;
+  max-width: 300px;
+  margin-top: 10px;
+  animation: eggman 10s linear 1 forwards;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,15 @@
+.megaphone {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.active {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,26 @@
+.finalCount {
+  display: relative;
+  margin: auto;
+  color: white;
+  border-radius: 50%;
+  background-color: blue;
+  align-content: middle;
+  height: 400px;
+  width: 400px;
+}
+.numbers {
+  display: relative;
+  font-size: 12em;
+  margin: auto;
+  align-self: center;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.activated {
+  animation: changeColor 5s linear 1 forwards 1s;
+}
+
+.hidden {
+  display: none;
+}
