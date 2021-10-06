@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./engine.css";
 import engine from "../../Images/engine.png";
 
-class Engine extends React.Component {
+class Engine extends Component {
   constructor(props) {
     super(props);
     this.state = {

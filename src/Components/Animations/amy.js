@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./amy.css";
 import amyRose from "../../Images/amyRose.gif";
 
-class Amy extends React.Component {
+class Amy extends Component {
   render() {
     return (
       <div className="active">

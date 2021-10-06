@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./tails.css";
 import tails from "../../Images/tails.gif";
 
-class Tails extends React.Component {
+class Tails extends Component {
   render() {
     return (
       <div className="active">

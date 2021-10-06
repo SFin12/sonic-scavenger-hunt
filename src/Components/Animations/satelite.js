@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./satelite.css";
 import satelite from "../../Images/satelite.png";
 
-class Satelite extends React.Component {
+class Satelite extends Component {
   constructor(props) {
     super(props);
     this.state = {

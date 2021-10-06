@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./blaze.css";
 import blaze from "../../Images/blaze.gif";
 
-class Blaze extends React.Component {
+class Blaze extends Component {
   render() {
     return (
       <div className="active">

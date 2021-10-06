@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./mainPage.css";
 import Sonic from "./Animations/sonic";
 import Amy from "./Animations/amy";
@@ -13,8 +13,9 @@ import Megaphone from "./Animations/megaphone";
 import Engine from "./Animations/engine";
 import Keys from "./Animations/keys";
 import Satelite from "./Animations/satelite";
+import {dialog} from "./info"
 
-class MainPage extends React.Component {
+class MainPage extends Component {
   constructor(props) {
     super(props);
     window.qNa = [
@@ -118,7 +119,7 @@ class MainPage extends React.Component {
     window.eggmanText =
       "I'm coming for you Sonic! You and all your little friends! With my robots I will rule the \
       WORLD!... \nWait a second, are guys celebrating a birthday party?\n...psst you have to press Enter";
-    window.currentArr = 11;
+    window.currentArr = 1;
     window.question = 0;
     window.answer = 1;
     window.response = 2;
@@ -153,8 +154,7 @@ class MainPage extends React.Component {
       });
       const responseLength =
         window.qNa[window.currentArr][window.response].length;
-
-      window.currentArr += 1;
+        window.currentArr += 1;
 
       setTimeout(() => {
         this.setState({
@@ -276,7 +276,7 @@ class MainPage extends React.Component {
         break;
     }
     return (
-      <div>
+      <div className="main">
         <p>{this.state.text}</p>
 
         {characterAnimation}

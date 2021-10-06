@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import spaceship from "../../Images/drEggmanShip.png";
 import earth from "../../Images/earth.png";
 import "./timer.css";
 import Countdown from "react-countdown";
 import SoundWave from "./soundWave";
 
-class Timer extends React.Component {
+class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {

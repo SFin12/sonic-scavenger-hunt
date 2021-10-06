@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./underwear.css";
 import underwear from "../../Images/underwear.jpg";
 
-class Underwear extends React.Component {
+class Underwear extends Component {
   render() {
     return (
       <div className="active">

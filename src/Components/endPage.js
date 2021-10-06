@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import SoundWave from "./Animations/soundWave";
 import "./endPage.css";
 
-class EndPage extends React.Component {
+class EndPage extends Component {
   constructor(props) {
     super(props);
     this.state = {

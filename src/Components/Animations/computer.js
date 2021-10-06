@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./computer.css";
 import computer from "../../Images/computer.png";
 
-class Computer extends React.Component {
+class Computer extends Component {
   constructor(props) {
     super(props);
     this.state = {

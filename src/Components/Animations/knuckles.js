@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./knuckles.css";
 import knuckles from "../../Images/knuckles.gif";
 
-class Knuckles extends React.Component {
+class Knuckles extends Component {
   render() {
     return (
       <div className="active">

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./eggman.css";
 import eggman from "../../Images/eggman.png";
 
-class Eggman extends React.Component {
+class Eggman extends Component {
   constructor(props) {
     super(props);
     this.print = this.print.bind(this);

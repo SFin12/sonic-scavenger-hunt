@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import soundWave from "../../Images/soundWave.gif";
 
-class SoundWave extends React.Component {
+class SoundWave extends Component {
   render() {
     return (
       <div className="soundWave">

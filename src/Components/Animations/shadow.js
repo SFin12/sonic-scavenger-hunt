@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./shadow.css";
 import shadow from "../../Images/shadow.gif";
 
-class Shadow extends React.Component {
+class Shadow extends Component {
   render() {
     return (
       <div className="active">

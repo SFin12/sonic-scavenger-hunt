@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import "./introPage.css";
 
-class IntroPage extends React.Component {
+class IntroPage extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);

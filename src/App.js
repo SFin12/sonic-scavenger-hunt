@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 //import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Navbar, NavbarBrand } from 'reactstrap';
 import "./App.css";
 import IntroPage from "./Components/introPage";
 import MainPage from "./Components/mainPage";
@@ -7,7 +8,7 @@ import StartingPage from "./Components/startingPage";
 import Timer from "./Components/Animations/timer";
 import EndPage from "./Components/endPage";
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,10 +41,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Navbar>
+          <NavbarBrand>
+            <span>Restart</span>
+          </NavbarBrand>
+        </Navbar>
         <header className="App-header">
           <h1>Sonic Adventure</h1>
         </header>
-        <div>
+        <div className="main">
           {this.state.startingPage ? (
             <StartingPage openPage={this.openPage} />
           ) : null}

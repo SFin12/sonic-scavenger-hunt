@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import "./silver.css";
 import silver from "../../Images/silver.gif";
 import corvette from "../../Images/corvette.gif";
 
-class Silver extends React.Component {
+class Silver extends Component {
   render() {
     return (
       <div className="active">

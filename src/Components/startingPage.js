@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import sonicOne from "../Images/sonicOne.png";
 import "./startingPage.css";
 
-class StartingPage extends React.Component {
+class StartingPage extends Component {
   constructor(props) {
     super(props);
 
@@ -15,7 +15,7 @@ class StartingPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='main'>
         <h3>Help Sonic and his friends save the world from Dr. Eggman!</h3>
         <img src={sonicOne} alt="Sonic with his finger pointing to the sky" />
         <div>

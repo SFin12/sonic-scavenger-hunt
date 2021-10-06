@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./megaphone.css";
 import megaphone from "../../Images/megaphone.png";
 
-class Megaphone extends React.Component {
+class Megaphone extends Component {
   constructor(props) {
     super(props);
     this.state = {

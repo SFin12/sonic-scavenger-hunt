@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./sonic.css";
 import sonicSpeed from "../../Images/sonicSpeed.gif";
 
-class Sonic extends React.Component {
+class Sonic extends Component {
   render() {
     return (
       <div className="active">

@@ -39,7 +39,7 @@
   position: relative;
   bottom: 50px;
   z-index: 5;
-  animation: mymove 20s linear 1 normal forwards;
+  animation: mymove 1200s linear 1 normal forwards;
   animation-play-state: running;
   margin-top: 10px;
 }
