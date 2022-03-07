@@ -1,18 +1,26 @@
-.sonic {
-  position: relative;
-  width: fit-content;
-  max-width: 300px;
-  animation: mymove linear 1s 200 reverse;
-  animation-delay: 4s;
-  animation-play-state: running;
-  margin-top: 10px;
+.running-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
 }
 
-@keyframes mymove {
-  0% {
-    left: 90%;
+.sonic {
+    position: relative;
+    width: fit-content;
+    max-width: 300px;
+    animation: sonicRunning linear 2s infinite;
+    /* animation-delay: 4s;
+    animation-play-state: running; */
+    margin: 10px 0 0 0;
+   
+}
+
+@keyframes sonicRunning {
+  from {
+    left: -600px;
   }
-  100% {
-    left: 80%;
+  to {
+    left: 600px;
   }
 }

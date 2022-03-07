@@ -5,9 +5,9 @@ import sonicSpeed from "../../Images/sonicSpeed.gif";
 class Sonic extends Component {
   render() {
     return (
-      <div className="active">
+      <div className="running-box">
         <img
-          className="sonic running"
+          className="sonic"
           id="sonic"
           src={sonicSpeed}
           alt="sonic running"
