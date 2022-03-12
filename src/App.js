@@ -61,7 +61,7 @@ class App extends Component {
                                 className="nav-setup"
                                 onClick={() => this.openPage("setup", false)}
                             >
-                                Setup Instructions
+                                Info
                             </span>
                         )}
                     </NavbarBrand>
