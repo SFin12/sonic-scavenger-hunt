@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/sonic-scavenger-hunt/static/css/main.30200095.chunk.css",
+    "main.js": "/sonic-scavenger-hunt/static/js/main.efbe9180.chunk.js",
+    "main.js.map": "/sonic-scavenger-hunt/static/js/main.efbe9180.chunk.js.map",
+    "runtime-main.js": "/sonic-scavenger-hunt/static/js/runtime-main.369f0983.js",
+    "runtime-main.js.map": "/sonic-scavenger-hunt/static/js/runtime-main.369f0983.js.map",
+    "static/css/2.05cf3275.chunk.css": "/sonic-scavenger-hunt/static/css/2.05cf3275.chunk.css",
+    "static/js/2.0f3b567f.chunk.js": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js",
+    "static/js/2.0f3b567f.chunk.js.map": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js.map",
+    "index.html": "/sonic-scavenger-hunt/index.html",
+    "static/css/2.05cf3275.chunk.css.map": "/sonic-scavenger-hunt/static/css/2.05cf3275.chunk.css.map",
+    "static/css/main.30200095.chunk.css.map": "/sonic-scavenger-hunt/static/css/main.30200095.chunk.css.map",
+    "static/js/2.0f3b567f.chunk.js.LICENSE.txt": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js.LICENSE.txt",
+    "static/media/amyRose.c17a88fb.gif": "/sonic-scavenger-hunt/static/media/amyRose.c17a88fb.gif",
+    "static/media/blaze.313f3e56.gif": "/sonic-scavenger-hunt/static/media/blaze.313f3e56.gif",
+    "static/media/computer.45aa22c4.png": "/sonic-scavenger-hunt/static/media/computer.45aa22c4.png",
+    "static/media/corvette.c82c6659.gif": "/sonic-scavenger-hunt/static/media/corvette.c82c6659.gif",
+    "static/media/drEggmanShip.a3659e7d.png": "/sonic-scavenger-hunt/static/media/drEggmanShip.a3659e7d.png",
+    "static/media/earth.2aacc454.png": "/sonic-scavenger-hunt/static/media/earth.2aacc454.png",
+    "static/media/eggman.31fbbf89.png": "/sonic-scavenger-hunt/static/media/eggman.31fbbf89.png",
+    "static/media/engine.44d10acd.png": "/sonic-scavenger-hunt/static/media/engine.44d10acd.png",
+    "static/media/keys.a532079f.png": "/sonic-scavenger-hunt/static/media/keys.a532079f.png",
+    "static/media/knuckles.a44776f2.gif": "/sonic-scavenger-hunt/static/media/knuckles.a44776f2.gif",
+    "static/media/megaphone.9522342c.png": "/sonic-scavenger-hunt/static/media/megaphone.9522342c.png",
+    "static/media/satelite.46321689.png": "/sonic-scavenger-hunt/static/media/satelite.46321689.png",
+    "static/media/shadow.60cbc835.gif": "/sonic-scavenger-hunt/static/media/shadow.60cbc835.gif",
+    "static/media/silver.81f5cd86.gif": "/sonic-scavenger-hunt/static/media/silver.81f5cd86.gif",
+    "static/media/sonicOne.1fac3590.png": "/sonic-scavenger-hunt/static/media/sonicOne.1fac3590.png",
+    "static/media/sonicSpeed.fc5a3731.gif": "/sonic-scavenger-hunt/static/media/sonicSpeed.fc5a3731.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.369f0983.js",
+    "static/css/2.05cf3275.chunk.css",
+    "static/js/2.0f3b567f.chunk.js",
+    "static/css/main.30200095.chunk.css",
+    "static/js/main.efbe9180.chunk.js"
+  ]
+}
