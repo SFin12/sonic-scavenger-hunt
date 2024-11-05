@@ -90,15 +90,15 @@
 
 .stars {
   z-index: 0;
-  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top
+  background: #000 url("../../Images/stars.png") repeat top
     center;
 }
 
 .twinkling {
   z-index: 1;
-  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+  background: transparent url("../../Images/stars.png")
     repeat top center;
-  animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 800s linear infinite;
 }
 
 .clouds {
@@ -113,7 +113,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: -10000px 5000px;
+    background-position: 10000px 3000px;
   }
 }
 
