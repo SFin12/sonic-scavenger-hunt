@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sonic-scavenger-hunt/static/css/main.30200095.chunk.css",
-    "main.js": "/sonic-scavenger-hunt/static/js/main.efbe9180.chunk.js",
-    "main.js.map": "/sonic-scavenger-hunt/static/js/main.efbe9180.chunk.js.map",
-    "runtime-main.js": "/sonic-scavenger-hunt/static/js/runtime-main.369f0983.js",
-    "runtime-main.js.map": "/sonic-scavenger-hunt/static/js/runtime-main.369f0983.js.map",
-    "static/css/2.05cf3275.chunk.css": "/sonic-scavenger-hunt/static/css/2.05cf3275.chunk.css",
-    "static/js/2.0f3b567f.chunk.js": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js",
-    "static/js/2.0f3b567f.chunk.js.map": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js.map",
+    "main.css": "/sonic-scavenger-hunt/static/css/main.787e222d.chunk.css",
+    "main.js": "/sonic-scavenger-hunt/static/js/main.5615afd1.chunk.js",
+    "main.js.map": "/sonic-scavenger-hunt/static/js/main.5615afd1.chunk.js.map",
+    "runtime-main.js": "/sonic-scavenger-hunt/static/js/runtime-main.98fac0fe.js",
+    "runtime-main.js.map": "/sonic-scavenger-hunt/static/js/runtime-main.98fac0fe.js.map",
+    "static/css/2.f28e44d1.chunk.css": "/sonic-scavenger-hunt/static/css/2.f28e44d1.chunk.css",
+    "static/js/2.6836ea5b.chunk.js": "/sonic-scavenger-hunt/static/js/2.6836ea5b.chunk.js",
+    "static/js/2.6836ea5b.chunk.js.map": "/sonic-scavenger-hunt/static/js/2.6836ea5b.chunk.js.map",
     "index.html": "/sonic-scavenger-hunt/index.html",
-    "static/css/2.05cf3275.chunk.css.map": "/sonic-scavenger-hunt/static/css/2.05cf3275.chunk.css.map",
-    "static/css/main.30200095.chunk.css.map": "/sonic-scavenger-hunt/static/css/main.30200095.chunk.css.map",
-    "static/js/2.0f3b567f.chunk.js.LICENSE.txt": "/sonic-scavenger-hunt/static/js/2.0f3b567f.chunk.js.LICENSE.txt",
+    "static/css/2.f28e44d1.chunk.css.map": "/sonic-scavenger-hunt/static/css/2.f28e44d1.chunk.css.map",
+    "static/css/main.787e222d.chunk.css.map": "/sonic-scavenger-hunt/static/css/main.787e222d.chunk.css.map",
+    "static/js/2.6836ea5b.chunk.js.LICENSE.txt": "/sonic-scavenger-hunt/static/js/2.6836ea5b.chunk.js.LICENSE.txt",
     "static/media/amyRose.c17a88fb.gif": "/sonic-scavenger-hunt/static/media/amyRose.c17a88fb.gif",
     "static/media/blaze.313f3e56.gif": "/sonic-scavenger-hunt/static/media/blaze.313f3e56.gif",
     "static/media/computer.45aa22c4.png": "/sonic-scavenger-hunt/static/media/computer.45aa22c4.png",
@@ -27,13 +27,14 @@
     "static/media/shadow.60cbc835.gif": "/sonic-scavenger-hunt/static/media/shadow.60cbc835.gif",
     "static/media/silver.81f5cd86.gif": "/sonic-scavenger-hunt/static/media/silver.81f5cd86.gif",
     "static/media/sonicOne.1fac3590.png": "/sonic-scavenger-hunt/static/media/sonicOne.1fac3590.png",
-    "static/media/sonicSpeed.fc5a3731.gif": "/sonic-scavenger-hunt/static/media/sonicSpeed.fc5a3731.gif"
+    "static/media/sonicSpeed.fc5a3731.gif": "/sonic-scavenger-hunt/static/media/sonicSpeed.fc5a3731.gif",
+    "static/media/timer.css": "/sonic-scavenger-hunt/static/media/stars.65ced855.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.369f0983.js",
-    "static/css/2.05cf3275.chunk.css",
-    "static/js/2.0f3b567f.chunk.js",
-    "static/css/main.30200095.chunk.css",
-    "static/js/main.efbe9180.chunk.js"
+    "static/js/runtime-main.98fac0fe.js",
+    "static/css/2.f28e44d1.chunk.css",
+    "static/js/2.6836ea5b.chunk.js",
+    "static/css/main.787e222d.chunk.css",
+    "static/js/main.5615afd1.chunk.js"
   ]
 }
